@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olavo Dario — Desenvolvedor de Software especializado em Backend, Automações e Sistemas. Soluções eficientes com Java, Spring Boot, Node.js e Python.">
+  <meta name="keywords" content="Desenvolvedor Backend, Automação, Java, Spring Boot, Node.js, Python, Sistemas">
+  <meta name="author" content="Olavo Dario">
+  <title>Olavo Dario — Desenvolvedor Backend & Automações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="#" class="logo">Olavo Dario</a>
+        <span class="header-role" id="headerRole"></span>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav-link active">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponível para projetos
+        </div>
+        <h1 class="hero-title reveal-up">
+          Construo <span class="text-gradient">sistemas</span>,
+          <span class="text-gradient">automações</span> e
+          soluções <span class="text-gradient">backend</span> com
+          foco em eficiência.
+        </h1>
+        <p class="hero-subtitle reveal-up" data-delay="100">
+          Transformo lógica em software funcional. Sem enrolação, sem código descartável — apenas soluções que resolvem problemas reais.
+        </p>
+        <div class="hero-cta reveal-up" data-delay="200">
+          <a href="#projects" class="btn btn-primary" id="btnProjects">
+            <span>Ver Projetos</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btnContact">
+            <span>Contato</span>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image reveal-up" data-delay="300">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-frame">
+          <img src="profile.png" alt="Olavo Dario — Desenvolvedor de Software" loading="eager">
+        </div>
+        <div class="hero-image-ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// sobre mim</span>
+        <h2 class="section-title">Quem sou eu</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-up">
+          <p>
+            Sou desenvolvedor de software com foco em <strong>backend</strong>, <strong>automações</strong> e construção de <strong>sistemas reais</strong>. Meu raciocínio é lógico e estruturado — cada linha de código que escrevo tem um propósito claro.
+          </p>
+          <p>
+            Não me interesso por soluções superficiais. Foco em entender o problema por completo antes de escrever qualquer código. O resultado são sistemas que funcionam, escalam e resolvem o que foi proposto.
+          </p>
+          <p>
+            Busco eficiência em tudo: na escolha da stack, na arquitetura, no processo. Prefiro menos tecnologias bem aplicadas do que um arsenal usado pela metade.
+          </p>
+        </div>
+        <div class="about-stats reveal-up" data-delay="100">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend</h3>
+            <p>APIs, microsserviços, lógica de negócio complexa</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>Automação</h3>
+            <p>Processos otimizados, integrações, bots inteligentes</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Sistemas</h3>
+            <p>Aplicações completas, do banco à interface</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack Section -->
+  <section class="section section-alt" id="stack">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// stack</span>
+        <h2 class="section-title">Tecnologias</h2>
+      </div>
+      <div class="stack-categories">
+        <!-- Backend -->
+        <div class="stack-category reveal-up">
+          <h3 class="stack-category-title"><i class="fa-solid fa-terminal"></i> Backend</h3>
+          <div class="stack-grid">
+            <div class="stack-item" data-tooltip="Java">
+              <i class="fa-brands fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="stack-item" data-tooltip="Spring Boot">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20.59 5.41a10.39 10.39 0 0 1 .83 8.24 10 10 0 0 1-2.93 4.5 10.45 10.45 0 0 1-7.13 3.03A10.66 10.66 0 0 1 1.5 12.34 10.39 10.39 0 0 1 5.46 3.7 10.66 10.66 0 0 1 12 1.18a10.39 10.39 0 0 1 8.59 4.23zM12 2.5a9.21 9.21 0 0 0-8.5 5.68A9.21 9.21 0 0 0 6.93 19.5 9.21 9.21 0 0 0 18.25 17 9.21 9.21 0 0 0 20.5 8.18 9.21 9.21 0 0 0 12 2.5zm4.18 4.32c-.93-1.56-3.12-2.06-4.68-1.13l-5.93 3.43A3.5 3.5 0 0 0 4 12.5a3.5 3.5 0 0 0 1.57 2.88l5.93 3.43a3.5 3.5 0 0 0 4.68-1.13 3.5 3.5 0 0 0-1.13-4.68L12 11.5l3.05-1.5A3.5 3.5 0 0 0 16.18 6.82z"/></svg>
+              <span>Spring Boot</span>
+            </div>
+            <div class="stack-item" data-tooltip="Node.js">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="stack-item" data-tooltip="Python">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+        <!-- Banco de Dados -->
+        <div class="stack-category reveal-up" data-delay="100">
+          <h3 class="stack-category-title"><i class="fa-solid fa-database"></i> Banco de Dados</h3>
+          <div class="stack-grid">
+            <div class="stack-item" data-tooltip="MySQL">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+              <span>MySQL</span>
+            </div>
+            <div class="stack-item" data-tooltip="MongoDB">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-.73-.12-1.43-.37-2.08-.73l-.2-.12V7.88c.7-.4 1.47-.66 2.28-.77v10.82zm2 0V7.11c.81.11 1.58.37 2.28.77v9.2l-.2.12c-.65.36-1.35.61-2.08.73z"/></svg>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <!-- Frontend -->
+        <div class="stack-category reveal-up" data-delay="200">
+          <h3 class="stack-category-title"><i class="fa-solid fa-palette"></i> Frontend</h3>
+          <div class="stack-grid">
+            <div class="stack-item" data-tooltip="React">
+              <i class="fa-brands fa-react"></i>
+              <span>React</span>
+            </div>
+          </div>
+        </div>
+        <!-- Ferramentas -->
+        <div class="stack-category reveal-up" data-delay="300">
+          <h3 class="stack-category-title"><i class="fa-solid fa-wrench"></i> Ferramentas</h3>
+          <div class="stack-grid">
+            <div class="stack-item" data-tooltip="Git">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="stack-item" data-tooltip="Linux">
+              <i class="fa-brands fa-linux"></i>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// projetos</span>
+        <h2 class="section-title">Trabalhos Recentes</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal-up">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Ver projeto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Sistema de Automação Comercial</h3>
+          <div class="project-problem">
+            <span class="project-label">Problema:</span>
+            Processos manuais repetitivos consumiam horas da equipe comercial diariamente.
+          </div>
+          <div class="project-solution">
+            <span class="project-label">Solução:</span>
+            API backend integrada com rotinas automatizadas, eliminando tarefas manuais e reduzindo erros em 80%.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-up" data-delay="100">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Ver projeto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Bot de Integração de Dados</h3>
+          <div class="project-problem">
+            <span class="project-label">Problema:</span>
+            Dados financeiros vindos de múltiplas fontes sem padronização ou consolidação.
+          </div>
+          <div class="project-solution">
+            <span class="project-label">Solução:</span>
+            Bot em Python que coleta, normaliza e armazena dados automaticamente, gerando relatórios consolidados.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-up" data-delay="200">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="Ver projeto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Plataforma de Orçamentos</h3>
+          <div class="project-problem">
+            <span class="project-label">Problema:</span>
+            Orçamentos técnicos feitos manualmente em planilhas, propensos a erros e sem padronização.
+          </div>
+          <div class="project-solution">
+            <span class="project-label">Solução:</span>
+            Sistema web com cálculos automatizados, templates reutilizáveis e exportação em PDF profissional.
+          </div>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentials Section -->
+  <section class="section section-alt" id="differentials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// diferenciais</span>
+        <h2 class="section-title">O que me diferencia</h2>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card reveal-up">
+          <div class="diff-number">01</div>
+          <h3>Pensamento Analítico</h3>
+          <p>Decomponho problemas complexos em partes gerenciáveis antes de escrever qualquer código.</p>
+        </div>
+        <div class="diff-card reveal-up" data-delay="100">
+          <div class="diff-number">02</div>
+          <h3>Foco em Problemas Reais</h3>
+          <p>Construo software que resolve necessidades concretas, não demos que impressionam apenas visualmente.</p>
+        </div>
+        <div class="diff-card reveal-up" data-delay="200">
+          <div class="diff-number">03</div>
+          <h3>Aprendizado Rápido</h3>
+          <p>Assimilo novas tecnologias e conceitos com velocidade, adaptando-me ao que o projeto exige.</p>
+        </div>
+        <div class="diff-card reveal-up" data-delay="300">
+          <div class="diff-number">04</div>
+          <h3>Sistemas Úteis</h3>
+          <p>Cada projeto que entrego é funcional, mantível e projetado para durar além da primeira entrega.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// contato</span>
+        <h2 class="section-title">Vamos conversar</h2>
+      </div>
+      <div class="contact-content reveal-up">
+        <p class="contact-text">
+          Tem um projeto em mente ou quer discutir uma ideia? <br>Entre em contato por qualquer um dos canais abaixo.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:olavo@email.com" class="contact-card" id="contactEmail">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">olavo@email.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/in/olavodario" target="_blank" class="contact-card" id="contactLinkedin">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">/in/olavodario</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com/olavodario" target="_blank" class="contact-card" id="contactGithub">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">/olavodario</span>
+            </div>
+            <i class="fa-solid fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+        <a href="mailto:olavo@email.com" class="btn btn-primary btn-lg" id="btnMainContact">
+          <span>Enviar Mensagem</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Olavo Dario</span>
+        <span class="footer-copy">&copy; 2026 — Todos os direitos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
