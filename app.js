@@ -72,7 +72,7 @@
 
   // --- Grid drawing ---
   function drawGrid() {
-    ctx.strokeStyle = 'rgba(127, 90, 240, 0.03)';
+    ctx.strokeStyle = 'rgba(16, 185, 129, 0.03)';
     ctx.lineWidth = 0.5;
 
     for (let x = 0; x <= cols; x++) {
@@ -105,7 +105,7 @@
       this.life = 0;
       this.maxLife = 200 + Math.floor(Math.random() * 300);
       this.turnChance = 0.06 + Math.random() * 0.06;
-      this.hue = 260 + Math.random() * 20; // purple range
+      this.hue = 155 + Math.random() * 20; // green range
     }
 
     randomDir() {
@@ -228,7 +228,7 @@
       const alpha = 0.08 + Math.sin(node.pulse) * 0.06;
       ctx.beginPath();
       ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(127, 90, 240, ${alpha})`;
+      ctx.fillStyle = `rgba(16, 185, 129, ${alpha})`;
       ctx.fill();
     });
   }
